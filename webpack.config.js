@@ -2,10 +2,12 @@ let glob = require("glob");
 
 let entry = __dirname + "/app/src/page.js";
 let outputPath = __dirname + "/dist/";
+let devtool = "";
 
 if (process.env.TESTBUILD) {
     entry = glob.sync(__dirname + "/app/test/**/*.test.js");
     outputPath = __dirname + "/test-dist/";
+    devtool = "source-map";
 }
 
 module.exports = {
@@ -13,6 +15,7 @@ module.exports = {
     output: {
         path: outputPath
     },
+    devtool:devtool,
     module: {
         rules: [
             {
