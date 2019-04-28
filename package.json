@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx webpack app/src/page.js"
+    "build": "npx webpack"
   },
   "repository": {
     "type": "git",
