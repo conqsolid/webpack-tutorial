@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack app/src/page.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/conqsolid/webpack-tutorial/issues"
   },
-  "homepage": "https://github.com/conqsolid/webpack-tutorial#readme"
+  "homepage": "https://github.com/conqsolid/webpack-tutorial#readme",
+  "dependencies": {
+    "jquery": "^3.4.0",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
+  }
 }
